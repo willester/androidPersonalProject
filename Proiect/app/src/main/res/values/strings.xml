@@ -1,0 +1,93 @@
+<resources>
+    <!-- App name-->
+    <string name="app_name">Auction Hause</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!-- Main Activity-->
+    <string name="welcome_main">Welcome to auction hause</string>
+    <string name="message_login_main">Please log in or register to experience out wonderful services</string>
+    <string name="btn_login_main">Log In</string>
+    <string name="btn_signup_main">Sign Up</string>
+    <!--Registration Activity-->
+    <string name="message_registration">Fill all the fields in order to create an account</string>
+    <string name="hint_text_name_registration">Name</string>
+    <string name="hint_text_email_registration">Email</string>
+    <string name="hint_text_username_registration">Username</string>
+    <string name="hint_text_date_registration">MM/DD/YYYY</string>
+    <string name="text_buyer_registration">Buyer</string>
+    <string name="text_seller_registration">Seller</string>
+    <string name="btn_create_account_registration">Create Account</string>
+    <string name="btn_back">Back</string>
+    <string name="reg_password">Password</string>
+    <!--LogIn Activity-->
+    <string name="message_login">Please input the log in credentials</string>
+    <string name="hint_text_password_login">Password</string>
+    <string name="btn_login">Log In</string>
+    <!--Buttons from MainSellerAct and MainBuyerAct-->
+    <string name="btn_discover">Discover</string>
+    <string name="btn_favorites">Favorites</string>
+    <string name="btn_bidding">Bidding</string>
+    <string name="btn_settings">Settings</string>
+    <!--Add Item Activity-->
+    <string name="message_addItem_category">Choose a category for the item</string>
+    <string name="text_itemName_addItem">Item Name</string>
+    <string name="message_addItem_minPrice">Choose a minimum price for the item</string>
+    <string name="dollar_sign">$</string>
+    <string name="message_addItem_biddingDate">Choose a final bidding date for the item ( it must be different than the default day)</string>
+    <string name="message_addItem_location">Choose the continent from which the item is from and complete the fiels regarding the place of origin</string>
+    <string name="text_country">Country</string>
+    <string name="text_city">City</string>
+    <string name="btn_addItem">Add Item</string>
+    <string name="btn_backToMenu">Back to Menu</string>
+    <string name="zero_value">0</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Log in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="back">Back</string>
+    <!--Settings Acivity-->
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="btn_Save_Pref">Save Settings</string>
+    <string name="color">Color</string>
+    <!-- Preference Titles -->
+    <string name="account_settings_header">Account settings</string>
+    <string name="personalization_settings">Personalization settings</string>
+    <!-- Messages Preferences -->
+    <string name="username_pref">Your new username</string>
+    <string name="password_pref">Your new password</string>
+    <string name="stay_connected_pref">Remember username and password</string>
+    <!--Summary Messages-->
+    <string name="new_username">Enter your new username</string>
+    <string name="new_pass">Enter your new password</string>
+    <string name="background_color">Choose a background color</string>
+    <string name="font">Choose a font</string>
+    <string name="darkMode">Activate dark mode</string>
+    <!--Paint activity strings-->
+    <string name="verify_robot">Not a robot check: Please draw something</string>
+    <string name="btn_apply">Apply</string>
+    <string name="not_robot">Not a robot check</string>
+    <string name="title_activity_maps">Map</string>
+    <!--Maps button on Discover item buyer-->
+    <string name="view_maps">View maps</string>
+    <!-- save report-->
+    <string name="save_reprt">Save report</string>
+    <!-- switch text-->
+    <string name="switch_value_buyer">Buyer</string>
+    <string name="switch_value_seller">Seller</string>
+    <!-- report seller-->
+    <string name="report_Seller_RAAND_1">Report 1</string>
+    <string name="report_Seller_RAAND_2">Report 2</string>
+    <string name="report_Seller_RAAND_3">Report 3</string>
+    <!-- discorver item buyer-->
+    <string name="textView_discover_buyer">Item description</string>
+    <string name="bid_button_discover">Bid</string>
+    <string name="bid_input_amount_discover">Your bid amount</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="Minimum_Price">Minimum Price: $</string>
+    <string name="Filler_Text">Test</string>
+
+</resources>

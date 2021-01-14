@@ -1,0 +1,98 @@
+{
+  "noSellers": 1,
+  "noBuyers": 2,
+  "users": [
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "username": "john",
+      "password": "john10",
+      "items": [
+        {
+          "name": "ring",
+          "category": "Jewelry",
+          "price": 200,
+          "date": "29/09/2022",
+          "origin": {
+            "name": "Japan",
+            "city": "Tokyo",
+            "continent": "AS"
+          }
+        },
+        {
+          "name": "Beatle",
+          "category": "Old Cars",
+          "price": 3000,
+          "date": "29/09/2021",
+          "origin": {
+            "name": "France",
+            "city": "Paris",
+            "continent": "EU"
+          }
+        },
+        {
+          "name": "Autumn",
+          "category": "Paintings",
+          "price": 700,
+          "date": "29/09/2021",
+          "origin": {
+            "name": "AMERICA",
+            "city": "New York",
+            "continent": "US"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Jane",
+      "email": "jane@gmail.com",
+      "username": "jane",
+      "password": "jane10",
+      "adult": true,
+      "items": [
+        {
+          "name": "ring",
+          "category": "Jewelry",
+          "price": 200,
+          "date": "29/09/2022",
+          "contryOrigin": {
+            "name": "Japan",
+            "city": "Tokyo",
+            "continent": "AS"
+          }
+        }
+      ]
+    },
+    {
+      "name": "David",
+      "email": "david@gmail.com",
+      "username": "david",
+      "password": "david10",
+      "adult": true,
+      "items": [
+        {
+          "name": "Beatle",
+          "category": "Old Cars",
+          "price": 3000,
+          "date": "29/09/2021",
+          "origin": {
+            "name": "France",
+            "city": "Paris",
+            "continent": "EU"
+          }
+        },
+        {
+          "name": "Autumn",
+          "category": "Paintings",
+          "price": 700,
+          "date": "29/09/2021",
+          "origin": {
+            "name": "AMERICA",
+            "city": "New York",
+            "continent": "US"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="37dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fira_sans_condensed_medium"
+        android:text="@string/message_registration"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="38dp" />
+
+    <EditText
+        android:id="@+id/RegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/hint_text_name_registration"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        tools:text="@string/hint_text_name_registration" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:id="@+id/RegistrationEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/hint_text_email_registration"
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"
+        tools:text="@string/hint_text_email_registration" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <EditText
+        android:id="@+id/RegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/hint_text_username_registration"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        tools:text="@string/hint_text_username_registration" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+    <EditText
+        android:id="@+id/RegistrationPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/reg_password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        tools:text="@string/reg_password" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+
+    <EditText
+        android:id="@+id/RegBday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lato"
+        android:hint="@string/hint_text_date_registration"
+        android:inputType="date"
+        android:textAlignment="textStart"
+        tools:text="@string/hint_text_date_registration" />
+
+    <Space
+        android:layout_width="53dp"
+        android:layout_height="12dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+
+            <RadioGroup
+                android:id="@+id/RegRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <RadioButton
+                    android:id="@+id/radioBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/text_buyer_registration"
+                    android:textAlignment="textStart" />
+
+                <RadioButton
+                    android:id="@+id/radioSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/text_seller_registration" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="21dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnEndReg"
+                    android:layout_width="123dp"
+                    android:layout_height="56dp"
+                    android:fontFamily="@font/bitter_bold"
+                    android:onClick="createUser"
+                    android:text="@string/btn_create_account_registration"
+                    app:backgroundTint="@color/powerful_red"
+                    app:cornerRadius="100px" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/btnBackFirstMenu"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bitter_bold"
+                    android:onClick="returnFirst"
+                    android:text="@string/back"
+                    app:backgroundTint="@color/powerful_red"
+                    app:cornerRadius="100px" />
+
+                <Space
+                    android:layout_width="33dp"
+                    android:layout_height="31dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

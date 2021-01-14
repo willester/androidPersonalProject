@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BtnBuyerBet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".MainBuyerAct">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="59dp"
+            android:layout_height="41dp"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="64dp"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ListView
+        android:id="@+id/buyerDicoverList"
+        android:layout_width="match_parent"
+        android:layout_height="554dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnBuyFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_favorites_button"
+            android:fontFamily="@font/bitter_bold"
+            android:onClick="openFavsActivity"
+            android:text="@string/btn_favorites"
+            android:textSize="11sp"
+            app:backgroundTint="@color/powerful_red"
+            app:cornerRadius="100px" />
+
+        <Button
+            android:id="@+id/BtnBuyBids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_bidding_button"
+            android:fontFamily="@font/bitter_bold"
+            android:onClick="openBiddings"
+            android:text="@string/btn_bidding"
+            android:textSize="11sp"
+            app:backgroundTint="@color/powerful_red"
+            app:cornerRadius="100px" />
+
+        <Button
+            android:id="@+id/BtnBuySettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_acc_button"
+
+            android:fontFamily="@font/bitter_bold"
+            android:onClick="callSettings"
+            android:text="@string/btn_settings"
+            android:textSize="11sp"
+            app:backgroundTint="@color/powerful_red"
+            app:cornerRadius="100px" />
+    </LinearLayout>
+
+</LinearLayout>

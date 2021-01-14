@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:longClickable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:fontFamily="@font/fira_sans_condensed_medium"
+                android:text="@string/textView_discover_buyer"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btnViewMaps"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bitter_bold"
+                android:onClick="callMapsActivity"
+                android:text="@string/view_maps"
+                app:backgroundTint="@color/powerful_red"
+                app:cornerRadius="@dimen/corner_radius_btns" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="43dp"
+            android:layout_height="38dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/editTextItemDiscover"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/bitter_bold"
+            android:hint="@string/bid_input_amount_discover"
+            android:inputType="number" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="43dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/buttonBid"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bitter_bold"
+            android:text="@string/bid_button_discover"
+            app:backgroundTint="@color/powerful_red"
+            app:cornerRadius="@dimen/corner_radius_btns" />
+
+        <Space
+            android:layout_width="77dp"
+            android:layout_height="21dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/lato"
+            android:text="@string/Minimum_Price" />
+
+        <TextView
+            android:id="@+id/textViewPriceItem"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:text="@string/Filler_Text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBoxFavoites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fira_sans_condensed_medium"
+            android:text="@string/add_to_favorites" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/cbValidBid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/fira_sans_condensed_medium"
+            android:text="@string/not_robot" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="27dp" />
+
+</LinearLayout>

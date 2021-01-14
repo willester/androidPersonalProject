@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".SellerBiddingMenu">
+
+    <TextView
+        android:id="@+id/BiddingsSeller1TextView"
+        android:layout_width="250dp"
+        android:layout_height="102dp"
+        android:fontFamily="@font/fira_sans_condensed_medium"
+        android:text="@string/report_Seller_RAAND_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/BiddingsSeller2TextView"
+        android:layout_width="245dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/fira_sans_condensed_medium"
+        android:text="@string/report_Seller_RAAND_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BiddingsSeller1TextView"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <TextView
+        android:id="@+id/BiddingsSeller3TextView"
+        android:layout_width="117dp"
+        android:layout_height="75dp"
+        android:fontFamily="@font/fira_sans_condensed_medium"
+        android:text="@string/report_Seller_RAAND_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BiddingsSeller2TextView"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/ButtonCreatReportPdfSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitter_bold"
+        android:onClick="SaveReport"
+        android:text="@string/save_reprt"
+        app:backgroundTint="@color/powerful_red"
+        app:cornerRadius="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BiddingsSeller3TextView"
+        app:layout_constraintVertical_bias="0.322" />
+</androidx.constraintlayout.widget.ConstraintLayout>

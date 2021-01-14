@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".MainSellerAct">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="59dp"
+            android:layout_height="41dp"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="64dp"
+            android:layout_height="44dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/recSellerItems"
+        android:layout_width="match_parent"
+        android:layout_height="536dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="callAddItem"
+            app:srcCompat="@drawable/ic_action_add" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnBuyBids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_bidding_button"
+            android:fontFamily="@font/bitter_bold"
+            android:onClick="goToBiddings"
+            android:text="@string/btn_bidding"
+            android:textSize="11sp"
+            app:backgroundTint="#F11616"
+            app:cornerRadius="100px" />
+
+        <Button
+            android:id="@+id/BtnBuySettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_acc_button"
+
+            android:fontFamily="@font/bitter_bold"
+            android:onClick="callSettings"
+            android:text="@string/btn_settings"
+            android:textSize="11sp"
+            app:backgroundTint="#F11616"
+            app:cornerRadius="100px" />
+    </LinearLayout>
+
+</LinearLayout>

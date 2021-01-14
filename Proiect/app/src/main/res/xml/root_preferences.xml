@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/account_settings_header"
+        app:title="@string/account_settings_header">
+
+        <EditTextPreference
+            android:title="@string/username_pref"
+            android:key="username"
+            android:summary="@string/new_username"
+            app:title="@string/username_pref" />
+        <EditTextPreference
+            android:title="@string/password_pref"
+            android:key="password"
+            android:summary="@string/new_pass"
+            app:title="@string/password_pref" />
+        <CheckBoxPreference
+            android:title="@string/stay_connected_pref"
+            android:defaultValue="false"
+            android:key="stayConnected"
+            app:title="@string/stay_connected_pref" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/personalization_settings"
+        app:title="@string/personalization_settings">
+        <ListPreference
+            android:entries="@array/color_option_names"
+            android:entryValues="@string/color"
+            android:key="colorsList"
+            android:negativeButtonText="Renounce"
+            android:summary="@string/background_color"
+            android:title="Background color" />
+        <MultiSelectListPreference
+            android:entries="@array/font_option_names"
+            android:entryValues="@array/preloaded_fonts"
+            android:key="fontsList"
+            android:summary="@string/font"
+            android:title="Font" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="darkMode"
+            android:summary="@string/darkMode"
+            android:title="Dark Mode" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,32 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="color_option">
+        <item>@color/white</item>
+        <item>@color/light_red1</item>
+        <item>@color/light_red2</item>
+        <item>@color/light_red3</item>
+        <item>@color/light_red4</item>
+        <item>@color/light_red5</item>
+        <item>@color/light_red6</item>
+        <item>@color/light_red6</item>
+        <item>@color/light_red</item>
+    </string-array>
+    <!--Color Names-->
+    <string-array name="color_option_names">
+        <item>White</item>
+        <item>Red1</item>
+        <item>Red2</item>
+        <item>Red3</item>
+        <item>Red4</item>
+        <item>Red5</item>
+        <item>Red6</item>
+        <item>Red7</item>
+    </string-array>
+    <!--Font Names-->
+    <string-array name="font_option_names">
+        <item>Bitter Bold</item>
+        <item>Fira Sans</item>
+        <item>Lato</item>
+        <item>Snippet</item>
+    </string-array>
+</resources>
